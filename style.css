@@ -1,0 +1,280 @@
+/* Adjust the background color with a linear gradient */
+body {
+    /* background-color: rgb(43, 188, 245); */
+    background: linear-gradient(blue, red);
+}
+
+/* modify the container div with a static width of 1024px and center it*/
+.container {
+    width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.aboutHero {
+    text-align: center;
+    width: 50%;
+    flex: 2;
+    padding: 3rem;
+}
+
+.imgBox img {
+    width: 40.5rem;
+    margin-left: 370px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+
+}
+
+/* --------------------------------- */
+/* CSS for the Header, Logo, and NAV */
+/* --------------------------------- */
+
+/* The header box will need to display the content side by side using flexbox and justify content ... Hint: flex, center the items, 
+    and add some space from the outside edges */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b8336a;
+}
+
+/* adjust the size of the logo image (150 - 225 px) */
+.logoIcon img {
+    width: 150px;
+}
+
+/* Style the look of the buttons (color, border, padding etc.), display, and their position  */
+.navButton {
+    border: 2px solid white;
+    padding: 12px 25px;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    position: relative;
+}
+
+.navButton2 {
+    border: 2px solid white;
+    padding: 12px 25px;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    position: relative;
+}
+
+/* Remove the hypertext look from the anchor element, change the font, and font color */
+.navButton a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/* Style (position, border, shadow) and hide the drop down box */
+.dropDown {
+    position: absolute;
+    margin-left: -27px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px black;
+    background-color: white;
+    z-index: 1;
+    display: none;
+}
+
+/* This will override the previous class selector during hover to display the dropdown. */
+.navButton:hover .dropDown {
+    display: block;
+}
+
+/* Change the background color of the dropdown menu and possibly remove the border  */
+.dropDown .navButton {}
+
+/* style the color of the anchor elements inside the drop down*/
+.dropDown .navButton a {
+    color: #b8336a;
+}
+
+
+/* Bonus add a hover effect to the dropdown menu with a color change of the background */
+.dropDown .navButton:hover {}
+
+/* --------------------------------------- */
+/* CSS for the Main Section of the Website */
+/* ---------------------------------------- */
+
+/* Create a min-height of 300, add flex, and align everything to the center */
+main {
+    display: flex;
+    min-height: 300px;
+    align-items: center;
+    /* background-color: sandybrown; */
+}
+
+/* Add a flex ratio of 2 and some padding */
+.heroBox1 {
+    /* background-color: sandybrown; */
+    width: 50%;
+    flex: 2;
+    padding: 3rem;
+}
+
+/* Add a flex ratio of 1  */
+.heroBox2 {
+    /* background-color: sandybrown;
+    width: 50%; */
+    flex: 1;
+}
+
+/* Stretch the image to 100% of the div and add a drop-shawdow filter */
+.heroBox2 img {
+    width: 100%;
+    filter: drop-shadow(10px 10px 4px rgb(0, 0, 0, 0.815));
+}
+
+/* Modify the font size, font family, padding and add a text shadow */
+h1 {
+    font-family: fantasy;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.411);
+}
+
+/* Modify the font size, font family, top margin */
+h2 {}
+
+/* modify the line-height and padding on the bottom */
+p {
+    line-height: 1.75rem;
+    padding-bottom: 1rem;
+}
+
+.myButton {
+    text-decoration: none;
+    color: black;
+    background-color: rgba(255, 255, 255, .75);
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 8px 12px;
+}
+
+
+/* ---------------------------------------- */
+/* CSS for the Cards Section of the Website */
+/* ---------------------------------------- */
+/* Set the cards section to flex, justify the content, and align to center */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Add a background image from the images folder with citation comment, set the background size to cover the space, adjust the background position (bottom), set a min height of 250px, set a width of 30%, set a border radius, and add a box-shadow */
+.card1 {
+    background-image: url(images/800px-Books-business-computer-connection-459654.jpg);
+    min-height: 250px;
+    /* This line will tell the image to cover the space available */
+    background-size: cover;
+    /* This line will tell the image to position from the bottom corner of the space provided */
+    background-position: bottom;
+    width: 30%;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.227);
+    text-decoration: none;
+}
+
+/* Add a background image from the images folder with citation commment, set the background size to cover the space, ajust the background position (bottom), set a min height of 250px, set a width of 30%, set a border radius, and add a box-shadow */
+.card2 {
+    background-image: url(images/motherboard.jpeg);
+    min-height: 250px;
+    /* This line will tell the image to cover the space available */
+    background-size: cover;
+    /* This line will tell the image to position from the bottom corner of the space provided */
+    background-position: bottom;
+    width: 30%;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.227);
+    text-decoration: none;
+}
+
+/* Add a background image from the images folder with citation comment, set the background size to cover the space, adjust the background position (bottom), set a min height of 250px, set a width of 30%, set a border radius, and add a box-shadow */
+.card3 {
+    background-image: url(images/iphone.jpeg);
+    min-height: 250px;
+    /* This line will tell the image to cover the space available */
+    background-size: cover;
+    /* This line will tell the image to position from the bottom corner of the space provided */
+    background-position: bottom;
+    width: 30%;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.227);
+    text-decoration: none;
+}
+
+/* Change the font size using rem, change the line height, adjust the margin, and change the font family */
+.cards p {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 30px;
+    text-shadow: 1px 2.5px 1px black;
+    font-size: 1.2rem;
+}
+
+/* Add padding to the top of the icon (0.75 rem), adjust the font size to 100px (or equivalent rem), change the color to something light (ex. rgb(236, 216, 207) )  */
+.cards i {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 1px 2px 1px black;
+}
+
+/* remove the underline from the hyperlink, change the color to something light or even just white, add text shadow */
+.cards a {
+    font-size: 1.5rem;
+    color: antiquewhite;
+    text-decoration: none;
+    text-shadow: 1px 2px 1px black;
+}
+
+
+/* ----------------------------------------------- */
+/* CSS for the Testimonials Section of the Website */
+/* ----------------------------------------------- */
+
+
+
+/* ----------------------------------------- */
+/* CSS for the Footer Section of the Website */
+/* ----------------------------------------- */
+
+/* ----------------------------------------------- */
+/* CSS for the Testimonials Section of the Website */
+/* ----------------------------------------------- */
+/* For the testimonials / review section, add flex to the display, dustify the content so it is spaced out, use flex-wrap and set it to "wrap", add some margin to the top and bottom */
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+/* For each individual box, add a light-colored boarder, include some padding, make each one the width of 40% to 45%, add a margin to the bottom of each box to create spacing between the rows  */
+.tBox {
+    width: 40%;
+    border: 1px solid whitesmoke;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* ----------------------------------------- */
+/* CSS for the Footer Section of the Website */
+/* ----------------------------------------- */
+/* For the footer, add a background color that is transparent, change the color of the font to something light, add a max width that matches the container's width, add margin to the right and left to center the content... consider also adding some margin to the top. */
+footer {
+    background-color: #b8336a;
+    color: aliceblue;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 3px;
+    margin-bottom: .5rem;
+}
